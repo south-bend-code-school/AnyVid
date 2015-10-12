@@ -1,0 +1,32 @@
+body {
+  background-image: url('./bostripe.png');
+  color: Black;
+}
+.about {
+  color:Black;
+}
+p {
+  color:Green;
+  font-size: 2em;
+text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+h2
+ {
+  text-align: center;
+}
+
+a {
+  float: right;
+  font-size: 2em;
+}
+
+.header {
+  color: Green;
+  text-align: center;
+  font-size: 6em;
+background-color:Orange;
+}

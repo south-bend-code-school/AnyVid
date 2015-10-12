@@ -1,0 +1,71 @@
+body {
+  font-family: times;
+  text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('./bostripe.png');
+    color: Black;
+}
+    #header_div {
+      font-size: 2em;
+      color: #FF6600;
+    }
+    #form_div{
+
+    }
+
+    h1 {
+      color: orange;
+      font-family: times;
+    }
+
+    #submit_button{
+      display: block;
+      width: 100%;
+      font-size: 3em;
+      border: none;
+      height: 100px;
+      position: fixed;
+      bottom: 0;
+      background-color: #99FF33;
+    }
+
+
+    .about {
+      color:Black;
+    }
+    p {
+      color: #FFF;
+      font-size: 2em;
+    text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+#space {
+  height: 100px;
+}
+    a {
+      float: right;
+      font-size: 2em;
+      text-decoration: none;
+      color: black;
+    }
+
+    #button-text {
+      margin-top:24px;
+    }
+
+    .header {
+      color: Green;
+      text-align: center;
+      font-size: 6em;
+      background-color:#000;
+    }
+
+    #Anyvid-tag {
+        display: inline;
+    }
