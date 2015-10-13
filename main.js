@@ -37,13 +37,17 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
         var club = object.get('clubID');
         var name = club.get('Name');
         var html =  '<div class="indVid">' +
+                    '<div class="vidDiv">' +
                     '<iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'" frameborder="0" allowfullscreen></iframe>' +
+                    '</div>' +
+                    '<div class="vidText">' +
                     '<h2>Name:</h2>' +
-                    '<h3>' + object.get('name') + '</h3>' +
+                    '<h4>' + object.get('name') + '</h4>' +
                     '<h2>Desription:</h2>' +
-                    '<h3>' + object.get('description') + '</h3>' +
+                    '<h4>' + object.get('description') + '</h4>' +
                     '<h2>Club:</h2>' +
-                    '<h3>' + name + '</h3>' +
+                    '<h4>' + name + '</h4>' +
+                    '</div>' +
                     '</div>';
         $('#videoResults').append(html);
       }
