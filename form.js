@@ -10,6 +10,28 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
 
   function init() {
     $('#submit_button').on('click', createNew);
+
+    var Club = Parse.Object.extend("Clubs");
+    var query = new Parse.Query(Club);
+    query.descending("createdAt");
+
+    var defaulthtml =  '<option>Select B&G Club</option>';
+    $("#location").append(defaulthtml);
+
+    query.find({
+      success: function(results) {
+        // Do something with the returned Parse.Object values
+        for (var i = 0; i < results.length; i++) {
+          var object = results[i];
+          var html =  '<option value="' + object.id + '">' + object.get('Name') + '</option>';
+          $("#location").append(html);
+        }
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+
   }
 
   function createNew(event){
@@ -19,13 +41,15 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
     var videoURL = youTubeURL[1];
     var description = $('#description').val();
     var name = $('#name').val();
-    var location = $('#location option:selected').text();
+    var clubId = $('#location option:selected').val();
     var category = $('#category option:selected').text();
 
     vid.set('videoURL', videoURL);
     vid.set('description', description);
     vid.set('name', name);
-    vid.set('location', location);
+    var club = new Parse.Object('Clubs');
+    club.id = clubId;
+    vid.set('clubID', club);  
     vid.set('category', category);
 
     vid.save(null, {
