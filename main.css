@@ -6,82 +6,88 @@ body {
     background-color: black;
     color: Black;
 }
-    #header_div {
-      font-size: 2em;
-      color: #FF6600;
-    }
-    #form_div{
+#header_div {
+  font-size: 2em;
+  color: #FF6600;
+}
 
-    }
+#form_div{
 
-
-    h1 {
-        text-align: center;
-    }
-
-    #file-upload{
-      margin-left: 10%;
-    }
-
-    h1 {
-      color: orange;
-      font-family: times;
-    }
-
-    #submit_button{
-      display: block;
-      width: 100%;
-      font-size: 3em;
-      border: none;
-      height: 100px;
-      position: fixed;
-      bottom: 0;
-      background-color: #99FF33;
-    }
+}
 
 
-    .about {
-      color:Black;
-    }
-    p {
-      color: #FFF;
-      font-size: 2em;
+h1 {
     text-align: center;
-    }
+}
 
-    h3 {
-      text-align: center;
-      color: #FFF;
-    }
+#file-upload{
+  margin-left: 10%;
+}
+
+h1 {
+  color: orange;
+  font-family: times;
+}
+
+#submit_button{
+  display: block;
+  width: 100%;
+  font-size: 3em;
+  border: none;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  background-color: #99FF33;
+}
+
+
+.about {
+  color:Black;
+}
+p {
+  color: #FFF;
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: #FFF;
+}
 
 #space {
   height: 100px;
 }
-    a {
-      float: right;
-      font-size: 2em;
-      text-decoration: none;
-      color: black;
-    }
 
-    #button-text {
-      margin-top:24px;
-    }
+a {
+  float: right;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
 
-    .header{
-      background-color:red;
-    }
+#button-text {
+  margin-top:24px;
+}
 
-    .header {
-      color: Green;
-      text-align: center;
-      font-size: 6em;
-      background-color:#000;
-    }
+.header{
+  background-color:red;
+}
 
-    #Anyvid-tag {
-        display: inline;
-    }
-    h4 {
-      color: #FFF;
-    }
+.header {
+  color: Green;
+  text-align: center;
+  font-size: 6em;
+  background-color:#000;
+}
+
+#Anyvid-tag {
+    display: inline;
+}
+h4 {
+  color: #FFF;
+}
+
+.indVid h2 {
+  color: orange;
+}
