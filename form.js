@@ -15,7 +15,8 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
   function createNew(event){
     event.preventDefault();
     var vid = new Parse.Object('Vid');
-    var videoURL = $('#videoURL').val();
+    var youTubeURL = $('#videoURL').val().split('=');
+    var videoURL = youTubeURL[1];
     var description = $('#description').val();
     var name = $('#name').val();
     var location = $('#location option:selected').text();
