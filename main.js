@@ -21,7 +21,7 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
 
   function parseId() {
   var uri = window.location.search.split('=');
-  var category = uri[1];
+  var category = decodeURI(uri[1]);
 
   $('#catHeader').append('<h1>' + category + '</h1>');
 
