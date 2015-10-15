@@ -19,15 +19,34 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
     window.location.replace('./results.html?id=' + category);
   }
 
-  function parseId() {
-  var uri = window.location.search.split('=');
-  var category = decodeURI(uri[1]);
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+  }
 
-  $('#catHeader').append('<h1>' + category + '</h1>');
+  function parseId() {
+  //var uri = window.location.search.split('=');
+  var category = getURLParameter('id');
+  var name = getURLParameter('name');
+
+  if(name) {
+    $('#catHeader').append('<h1>' + name + '</h1>');
+  }
+  else {
+    $('#catHeader').append('<h1>' + category + '</h1>');
+  }
 
   var vid = Parse.Object.extend('Vid');
   var query = new Parse.Query(vid);
-  query.equalTo('category', category);
+  if(!name) {
+    query.equalTo('category', category);
+  } else {
+    var Club = Parse.Object.extend("Clubs");
+    // POINTER
+    var club = new Club();
+    club.id = category;
+    query.equalTo('clubID', club );
+  }
+
   query.include('clubID');
   query.find({
     success: function(results){

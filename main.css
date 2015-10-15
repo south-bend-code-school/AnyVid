@@ -115,3 +115,9 @@ h4 {
   display: inline-block !important;
   float: left;
 }
+
+#map {
+  width: 90%;
+  height: 300px;
+  margin: 0 5%;
+}
