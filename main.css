@@ -1,23 +1,24 @@
 body {
   font-family: times;
   text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: Black;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: Black;
+
 }
 #header_div {
   font-size: 2em;
   color: #FF6600;
 }
 
-#form_div{
-
+#searchCategories {
+  margin: 0  0 5% 0;
 }
 
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #file-upload{
@@ -55,10 +56,6 @@ h3 {
   color: #FFF;
 }
 
-#space {
-  height: 100px;
-}
-
 a {
   float: right;
   font-size: 2em;
@@ -70,12 +67,9 @@ a {
   margin-top:24px;
 }
 
-.header{
-  background-color:red;
-}
-
 .header {
   color: Green;
+  background-color:red;
   text-align: center;
   font-size: 6em;
   background-color:#000;
@@ -88,6 +82,8 @@ h4 {
   color: #FFF;
 }
 
+/*======Results Display===========*/
+
 .indVid h2,
 .indvid h4 {
   color: orange;
@@ -97,11 +93,11 @@ h4 {
 
 .indVid {
   display: block;
-  height: 300px;
+  width: 96%;
   clear: both;
   margin: 0 0 5% 0;
-  border-bottom: 2px solid white;
-  padding: 2% ;
+  padding: 2%;
+  border-top: 2px solid white;
 }
 
 .vidDiv {
@@ -114,6 +110,77 @@ h4 {
   text-align: left;
   display: inline-block !important;
   float: left;
+  padding: 2%;
+}
+
+iframe {
+  padding: 1%;
+  margin: 0 auto;
+  width:420px;
+  height:315px;
+}
+
+/*======Media Query===========*/
+
+
+
+@media only screen and (max-width: 450px) {
+
+  .header .fpLogo  {
+    width: 2em;
+    height: 2em;
+    margin: 50px 0 0 50px;
+  }
+
+  .mission {
+    font-size: 0.7em;
+  }
+
+  .mission h1 {
+    font-size: 3em;
+  }
+
+  #submit_button {
+    font-size: 3em;
+    height: 100px;
+    position: relative;
+  }
+
+  .indVid h2 {
+    font-size: 1em;
+  }
+
+  .vidDiv {
+    display: block;
+    padding: 0;
+  }
+
+  .vidText {
+    display: block;
+    padding: 0;
+  }
+
+  iframe {
+    padding: 1%;
+    margin: 0 auto;
+    width: 98%;
+  }
+
+  #header_div #anyvid-tag {
+    font-size: 1em;
+    margin: 50px 0 ;
+    clear: both;
+  }
+
+  #catHeader h1 {
+    margin: 25px 0 ;
+    clear: both;
+  }
+
+  #form_div h1 {
+    font-size: 1em;
+  }
+
 }
 
 #map {

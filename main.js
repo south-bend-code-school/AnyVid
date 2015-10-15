@@ -57,7 +57,7 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
         var name = club.get('Name');
         var html =  '<div class="indVid">' +
                     '<div class="vidDiv">' +
-                    '<iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'" frameborder="0" allowfullscreen></iframe>' +
+                    '<iframe src="https://www.youtube.com/embed/'+video+'" frameborder="0" allowfullscreen></iframe>' +
                     '</div>' +
                     '<div class="vidText">' +
                     '<h2>Name:</h2>' +

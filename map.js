@@ -12,7 +12,7 @@ $(function() {
   $(document).ready(init);
 
   function init() {
-    initMap(41.67, -86.25, 12);
+    initMap(41.67, -86.25, 11);
   }
 
   function initMap(lat, lng, zoom){

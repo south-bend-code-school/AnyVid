@@ -49,7 +49,7 @@ Parse.initialize('wRSnKj1N95weLt90DMwZMgn19jHuh0Az80Lc16Q8',
     vid.set('name', name);
     var club = new Parse.Object('Clubs');
     club.id = clubId;
-    vid.set('clubID', club);  
+    vid.set('clubID', club);
     vid.set('category', category);
 
     vid.save(null, {
