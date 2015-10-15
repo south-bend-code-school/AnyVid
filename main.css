@@ -12,10 +12,13 @@ body {
   color: #FF6600;
 }
 
-#searchCategories {
-  margin: 0  0 5% 0;
+.space {
+  height: 300px;
 }
 
+.homeSpace {
+  height: 100px;
+}
 
 h1 {
   text-align: center;
@@ -108,7 +111,7 @@ h4 {
 
 .vidText {
   text-align: left;
-  display: inline-block !important;
+  display: inline-block;
   float: left;
   padding: 2%;
 }
@@ -118,6 +121,12 @@ iframe {
   margin: 0 auto;
   width:420px;
   height:315px;
+}
+
+#map {
+  width: 90%;
+  height: 300px;
+  margin: 0 5%;
 }
 
 /*======Media Query===========*/
@@ -181,10 +190,4 @@ iframe {
     font-size: 1em;
   }
 
-}
-
-#map {
-  width: 90%;
-  height: 300px;
-  margin: 0 5%;
 }
